@@ -1,0 +1,119 @@
+.css-typing {
+    width: 320px;
+    margin: auto;    
+}
+
+.css-typing p {
+    border-right: .15em solid rgb(167, 112, 70);
+    text-align: center;
+    /* font-family: "Courier"; */
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.css-typing p:nth-child(1) {
+    width: 21.6em;
+    animation: type 1.59s steps(40, end);
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+    width: 15.7em;
+    opacity: 0;
+
+    animation: type2 1.15s steps(40, end);
+
+    animation-delay: 1.59s;
+
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+    width: 10.2em;
+    opacity: 0;
+
+    animation: type2 0.75s steps(40, end);
+
+    animation-delay: 2.74s;
+
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(4) {
+    width: 21.75em;
+    opacity: 0;    
+    animation: type3 1.6s steps(40, end), blink .5s step-end infinite alternate;
+    animation-delay: 3.49s;    
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: .15em solid rgb(167, 112, 70);
+    }
+    100% {
+        border: none;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid rgb(167, 112, 70);
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes type3 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@media (min-width: 768px) {    
+    .css-typing{
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 80px;
+        width: 400px;
+    }
+    .css-typing p{
+        font-size: 16px;
+    }    
+}
+
+@media (min-width: 1366px) {          
+    .css-typing {
+        width: 450px;
+        padding-top: 48px;
+        display: inline-block;
+    }
+    .css-typing p{
+        font-size: 20px;
+    }   
+}

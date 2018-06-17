@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/typing.css">
+    <title>Мой портфолио</title>
+
+</head>
+
+<body>
+    <header>
+        <img class="avatar" src="./imgs/avatar3.jpg" alt="Мой аватар">
+        <div class="css-typing">
+            <p>Добро пожаловать на мой сайт - портфолио!</p>
+            <p>Меня зовут Александр Семыкин.</p>
+            <p>Я java - разработчик.</p>
+            <p>Предлагаю ознакомиться с моими навыками.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="menu-container">
+            <div class="btn-container">
+                <h3>Мои навыки</h3>
+                <div class="skills-btn" id="btn"></div>
+            </div>
+            <div class="skills-menu" id="menu">
+                <ul class="menu-content">
+                    <li>
+                        <a href="#edu">
+                            <div>Образование</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#java-se">
+                            <div>Java SE</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#java-ee">
+                            <div>Java EE</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sql">
+                            <div>SQL</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#git">
+                            <div>GIT</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#lit">
+                            <div>Литература</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#other">
+                            <div>Прочие навыки</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <article>
+            <header>
+                <div id="edu" class="space"></div>
+                <h3>Образование</h3>
+                <img class="pics" src="./imgs/edu.jpg" alt="">
+            </header>
+            <p class="subtitle">Базовое образование:</p>
+            <ul>
+                <li>
+                    <cite>
+                        <a href="http://www.bmstu.ru/">МГТУ им. Н.Э. Баумана,</a>
+                    </cite> факультет "Машиностроительные технологии", кафедра "Технологии обработки давлением" </li>
+            </ul>
+            <p class="subtitle">Профильное образование:</p>
+            <ul>
+                <li>
+                    <a href="https://informatics.ru/">Школа программистов онлайн.</a> Студент 2-го курса</li>
+                <li>
+                    <cite>
+                        <a href="https://www.udemy.com/how-to-connect-java-jdbc-to-mysql/learn/v4/overview">Курс Java Database Connection: JDBC and MySQL</a>
+                    </cite>
+                </li>
+                <li></li>
+                <li>
+                    <cite>
+                        <a href="https://www.udemy.com/jsp-tutorial/learn/v4/overview">Курс JSP, Servlets and JDBC for Beginners: Build a Database App</a>
+                    </cite>
+                </li>
+                <li></li>
+                <li>
+                    <cite>
+                        <a href="https://www.edx.org/course/introduction-linux-linuxfoundationx-lfs101x-1">Курс Introduction to Linux</a>
+                    </cite>
+                </li>
+            </ul>
+            <p class="link-to-src">
+                <a href="./sertifs.html">Документы об образовании</a>
+            </p>
+        </article>
+        <article>
+            <header>
+                <div id="java-se" class="space"></div>
+                <h3>Java SE</h3>
+                <img class="pics" src="./imgs/java-se.jpg" alt="">
+            </header>
+            <p>Разработан класс
+                <code>Period.</code> Задача класса состоит в определении периода времени, к которому относится текущая или определяемая во внешней
+                программе дата в зависимости от длины периода. Например, задан период 15 минут и текущее время 10:44. Это
+                время принадлежит периоду [30, 45]. Если период - 30 минут, то - [30, 60] и т.д. Такой класс может быть использован
+                как флаг для запуска других программ.
+            </p>
+            <p>При разработке класса использовались классы
+                <code>HashMap, Calendar, TimeZone</code> из пакета
+                <code>java.util и SimpleDateFormat</code> из пакета
+                <code>java.text.</code> Для тестирования использована библиотека
+                <strong>JUnit4.</strong> Для сборки проекта использован
+                <strong>maven.</strong> Среда разработки -
+                <strong>Eclipse.</strong>
+            </p>
+            <p class="link-to-src">
+                <a href="https://github.com/SawaSemykin/period">Исходный код</a>
+            </p>
+        </article>
+        <article>
+            <header>
+                <div id="java-ee" class="space"></div>
+                <h3>Java EE</h3>
+                <img class="pics" src="./imgs/java-ee.jpg" alt="">
+            </header>
+            <p>Разработал веб-приложение public-utilities-calculator, работающее на сервере
+                <strong>Apache Tomcat.</strong> Приложение рассчитывает сумму платежа по видам коммунальных услуг. Для входа в приложение
+                пользователю предлагается ввести свой лицевой счёт, после чего отображается страница о платеже.
+            </p>
+            <p>Компоненты приложения:</p>
+            <ul>
+                <li>Сервлет</li>
+                <li>Класс для работы с базой данных (БД)</li>
+                <li>Объекты передачи данных</li>
+                <li>Страницы JSP и HTML</li>
+            </ul>
+            <p>Работа приложения построена на паттерне проектирования
+                <strong>модель-представление-контроллер (MVC).</strong> Сервлет-контроллер осуществляет взаимодействие компонентов
+                приложения. Класс для работы с БД - модель, используя
+                <strong>JDBC API</strong>, выполняет подключение к БД для чтения или записи данных, используемых при расчёте платежей
+                или выводе информации о пользователе. Страница JSP-представление отвечает за внешнее оформление приложения.
+                Для обмена данными между компонентами приложения используется паттерн проектирования
+                <strong>объекты передачи данных (DAO).</strong>
+            </p>
+
+            <p class="link-to-src">
+                <a href="https://github.com/SawaSemykin/public-utilities-calculator">Исходный код</a>
+            </p>
+        </article>
+        <article>
+            <header>
+                <div id="sql" class="space"></div>
+                <h3>SQL</h3>
+                <img class="pics" src="./imgs/sql.jpg" alt="">
+            </header>
+            <ul>
+                <li>Владею базовыми
+                    <strong>CRUD функциями</strong>
+                </li>
+                <li>Владею структурой
+                    <strong>оператора SELECT</strong> и навыками применения его параметров</li>
+                <li>Способен составлять продвинутые SQL-запросы</li>
+                <li>Обучение SQL проходил на сайте
+                    <a href="http://www.sqlcourse.com/">www.sqlcourse.com</a>
+                </li>
+                <li></li>
+            </ul>
+            <p> .
+        </article>
+        <article>
+            <header>
+                <div id="git" class="space"></div>
+                <h3>GIT</h3>
+                <img class="pics" src="./imgs/git.jpg" alt="">
+            </header>
+            <ul>
+                <li>Опыт работы с
+                    <strong>GIT</strong> в консоли</li>
+                <li>Навыки работы с ветвлением</li>
+                <li>Навыки работы с удалёнными репозиториями</li>
+                <li>Управление своими учебными проектами осуществляю с помощью GIT
+                </li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <div id="lit" class="space"></div>
+                <h3>Литература</h3>
+                <img class="pics" src="./imgs/lit.jpg" alt="">
+            </header>
+            <ul>
+                <li>
+                    Сьерра К.
+                    <cite>"Изучаем Java"</cite>
+                </li>
+                <li>
+                    Э. Фримен, К. Сьерра, Б. Бейтс
+                    <cite>"Паттерны проектирования"</cite>
+                </li>
+                <li>
+                    Yakov Fain
+                    <cite>"Java Programming 24-Hour Trainer, Second Edition"</cite>
+                </li>
+                <li>
+                    Хорстманн Кей С.
+                    <cite>"Java. Библиотека профессионала, том 1. Основы. 10-e изд."</cite>
+                </li>
+                <li>
+                    Мартин Р.
+                    <cite>"Чистый код: создание, анализ и рефакторинг. Библиотека программиста"</cite>
+                </li>
+                <li>Scott Chacon, Ben Straub
+                    <cite>"Pro Git"</cite>
+                </li>
+            </ul>
+        </article>
+        <article>
+            <header>
+                <div id="other" class="space"></div>
+                <h3>Прочие навыки</h3>
+                <img class="pics" src="./imgs/other.jpeg" alt="">
+            </header>
+            <ul>
+                <li>
+                    <strong>Уровень английского языка Upper Intermediate</strong>
+                </li>
+                <li>Опыт работы с англоязычной документацией и профессиональной литературой
+                </li>
+                <li>Базовые навыки администрирования операционной системы
+                    <strong>Linux</strong>
+                </li>
+                <li>Практические навыки вёрстки сайтов на
+                    <strong>HTML5&CSS3</strong>
+                </li>
+                <li></li>
+            </ul>
+        </article>
+
+    </main>
+    <footer>
+        <p>Об авторе: Александр Геннадиевич Семыкин</p>
+        <p>Связаться со мной:</p>
+        <p>
+            <b>Тел.:</b> +7 (915) 490-31-34
+        </p>
+        <p>
+            <b>Email:</b> sawasemykin@yandex.ru
+        </p>
+        <p>
+            <b>Социальные сети: </b>
+        </p>
+
+        <div class="logo-container">
+            <a href="https://vk.com/id6964085">
+                <img src="./imgs/logos/vk_logo.png" alt="" class="logo">
+            </a>
+        </div>
+        <div class="logo-container">
+            <a href="https://www.facebook.com/alexander.semykin.3">
+                <img src="./imgs/logos/facebook_logo.png" alt="" class="logo">
+            </a>
+        </div>
+
+
+
+
+
+
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
